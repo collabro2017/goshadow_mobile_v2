@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NoteHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_caregiver_white" translatesAutoresizingMaskIntoConstraints="NO" id="Wc8-kJ-4iF">
+                    <rect key="frame" x="16" y="10" width="25" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="SBW-pp-eL0"/>
+                        <constraint firstAttribute="width" constant="25" id="SWg-cV-8nC"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_downArrow" translatesAutoresizingMaskIntoConstraints="NO" id="yAc-2V-tpi">
+                    <rect key="frame" x="279" y="10" width="25" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="3NW-aU-7jE"/>
+                        <constraint firstAttribute="height" constant="23" id="vSa-PL-pI6"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFh-bM-koX">
+                    <rect key="frame" x="51" y="11" width="220" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="GDt-5c-hGX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="rFh-bM-koX" secondAttribute="centerY" id="2XS-Qi-yDw"/>
+                <constraint firstAttribute="trailing" secondItem="rFh-bM-koX" secondAttribute="trailing" constant="49" id="Jva-VW-Ij3"/>
+                <constraint firstAttribute="centerY" secondItem="Wc8-kJ-4iF" secondAttribute="centerY" id="NZ4-qX-uc4"/>
+                <constraint firstItem="rFh-bM-koX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="51" id="Xxa-9g-Jph"/>
+                <constraint firstAttribute="trailing" secondItem="yAc-2V-tpi" secondAttribute="trailing" constant="16" id="pNv-wI-dQe"/>
+                <constraint firstItem="Wc8-kJ-4iF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="wzh-jj-OZO"/>
+                <constraint firstAttribute="centerY" secondItem="yAc-2V-tpi" secondAttribute="centerY" id="xoe-K6-jYG"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headerLabel" destination="rFh-bM-koX" id="yJb-Ig-NEm"/>
+                <outlet property="iconImage" destination="Wc8-kJ-4iF" id="mfo-ey-TfK"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_caregiver_white" width="25" height="23"/>
+        <image name="icon_downArrow" width="25" height="23"/>
+    </resources>
+</document>

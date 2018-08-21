@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NoteCell" id="333-io-qdn" customClass="NoteCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="333-io-qdn" id="khf-vI-K1u">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:34 PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJb-ez-MWy">
+                        <rect key="frame" x="16" y="8" width="50" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="6h8-MT-tbK"/>
+                            <constraint firstAttribute="height" constant="15" id="84l-6R-R9r"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wIx-XU-ORu">
+                        <rect key="frame" x="74" y="10" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="8FW-le-6Vg"/>
+                            <constraint firstAttribute="height" constant="12" id="fMb-h7-pHm"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfq-VT-JZW">
+                        <rect key="frame" x="16" y="25" width="568" height="47"/>
+                        <string key="text">Lorem opossum ipsum asdf lkjasd flkjsad lfkjsald fkjlsa fkdjlasdkjflas kdfjlkasf alskdjfl aksdfj asdfasd f Lorem opossum ipsum asdf lkjasd flkjsad lfkjsald fkjlsa fkdjlasdkjflas kdfjlkasf alskdjfl aksdfj asdfasd f</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BDS-y1-uoC">
+                        <rect key="frame" x="16" y="25" width="568" height="47"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <string key="text">Lorem opossum ipsum asdf lkjasd flkjsad lfkjsald fkjlsa fkdjlasdkjflas kdfjlkasf alskdjfl aksdfj asdfasd f Lorem opossum ipsum asdf lkjasd flkjsad lfkjsald fkjlsa fkdjlasdkjflas kdfjlkasf alskdjfl aksdfj asdfasd f</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_opportunity_flag" translatesAutoresizingMaskIntoConstraints="NO" id="Gb4-IX-GpP">
+                        <rect key="frame" x="574" y="0.0" width="26" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="26" id="7ls-M0-36N"/>
+                            <constraint firstAttribute="height" constant="26" id="NJV-UK-H2L"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BDS-y1-uoC" firstAttribute="top" secondItem="fJb-ez-MWy" secondAttribute="bottom" constant="2" id="BjN-40-HCa"/>
+                    <constraint firstItem="BDS-y1-uoC" firstAttribute="leading" secondItem="khf-vI-K1u" secondAttribute="leading" constant="16" id="Bye-Wi-POv"/>
+                    <constraint firstItem="Gb4-IX-GpP" firstAttribute="top" secondItem="khf-vI-K1u" secondAttribute="top" id="FJi-oj-Ocf"/>
+                    <constraint firstAttribute="trailing" secondItem="sfq-VT-JZW" secondAttribute="trailing" constant="16" id="H2G-le-drg"/>
+                    <constraint firstItem="wIx-XU-ORu" firstAttribute="top" secondItem="khf-vI-K1u" secondAttribute="top" constant="10" id="XvL-MV-zqH"/>
+                    <constraint firstItem="wIx-XU-ORu" firstAttribute="leading" secondItem="fJb-ez-MWy" secondAttribute="trailing" constant="8" id="YSb-ue-CcH"/>
+                    <constraint firstItem="fJb-ez-MWy" firstAttribute="top" secondItem="khf-vI-K1u" secondAttribute="top" constant="8" id="YdH-lc-wjp"/>
+                    <constraint firstAttribute="bottom" secondItem="sfq-VT-JZW" secondAttribute="bottom" constant="8" id="k0h-Yo-DMY"/>
+                    <constraint firstAttribute="bottom" secondItem="BDS-y1-uoC" secondAttribute="bottom" constant="8" id="k6V-2g-EuZ"/>
+                    <constraint firstItem="fJb-ez-MWy" firstAttribute="leading" secondItem="khf-vI-K1u" secondAttribute="leading" constant="16" id="ma8-JB-Q5w"/>
+                    <constraint firstItem="sfq-VT-JZW" firstAttribute="top" secondItem="fJb-ez-MWy" secondAttribute="bottom" constant="2" id="p6F-Lu-ElW"/>
+                    <constraint firstAttribute="trailing" secondItem="BDS-y1-uoC" secondAttribute="trailing" constant="16" id="qpI-XL-nhu"/>
+                    <constraint firstItem="sfq-VT-JZW" firstAttribute="leading" secondItem="khf-vI-K1u" secondAttribute="leading" constant="16" id="ri6-lf-RM9"/>
+                    <constraint firstAttribute="trailing" secondItem="Gb4-IX-GpP" secondAttribute="trailing" id="zhc-Al-XgM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="categoryIcon" destination="wIx-XU-ORu" id="51D-Vh-cOL"/>
+                <outlet property="dateTimeLabel" destination="fJb-ez-MWy" id="Qyx-kH-ubK"/>
+                <outlet property="noteLabel" destination="sfq-VT-JZW" id="waX-as-Hnx"/>
+                <outlet property="opportunityImage" destination="Gb4-IX-GpP" id="hc7-dl-7vF"/>
+                <outlet property="textView" destination="BDS-y1-uoC" id="jc3-iE-1uK"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_opportunity_flag" width="26" height="26"/>
+    </resources>
+</document>
